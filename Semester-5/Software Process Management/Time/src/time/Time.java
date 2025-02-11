@@ -32,9 +32,12 @@ public class Time
 		
 		int totalSeconds = getTotalSeconds("10:10:10");
 		System.out.println("Total Seconds = " + totalSeconds);
-		JOptionPane.showMessageDialog(null, totalSeconds, "Total Seconds",
-			JOptionPane.INFORMATION_MESSAGE);
+		//JOptionPane.showMessageDialog(null, totalSeconds, "Total Seconds",
+		//	JOptionPane.INFORMATION_MESSAGE);
+		
 		}
+	
+
 		catch(StringIndexOutOfBoundsException e)
 		{
 			JOptionPane.showMessageDialog(null,
