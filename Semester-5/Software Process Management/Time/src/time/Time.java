@@ -23,8 +23,8 @@ public class Time
 {
 	public static void main(String[] args) 
 	{
-		try
-		{
+		//try
+	//	{
 			
 		String time = JOptionPane.showInputDialog(null,
 			"Enter a time in the format hh:mm:ss:ms", "Enter Time",
@@ -38,24 +38,24 @@ public class Time
 		}
 	
 
-		catch(StringIndexOutOfBoundsException e)
-		{
-			JOptionPane.showMessageDialog(null,
-					"You entered the time in the wrong format.\n" +
-					"Please enter the time in the form hh:mm:ss:ms",
-					"Invalid Time", JOptionPane.ERROR_MESSAGE);
-		}
-		catch(NumberFormatException e)
-		{
-			JOptionPane.showMessageDialog(null,
-					"You entered an invalid time.\nPlease enter numbers only.",
-					"Invalid Time",	JOptionPane.ERROR_MESSAGE);
-		}
-		catch(Exception e)
-		{
-			System.out.println("An unexpected Exception occurred");
-		}
-	}
+//		catch(StringIndexOutOfBoundsException e)
+//		{
+//			JOptionPane.showMessageDialog(null,
+//					"You entered the time in the wrong format.\n" +
+//					"Please enter the time in the form hh:mm:ss:ms",
+//					"Invalid Time", JOptionPane.ERROR_MESSAGE);
+//		}
+//		catch(NumberFormatException e)
+//		{
+//			JOptionPane.showMessageDialog(null,
+//					"You entered an invalid time.\nPlease enter numbers only.",
+//					"Invalid Time",	JOptionPane.ERROR_MESSAGE);
+//		}
+//		catch(Exception e)
+//		{
+//			System.out.println("An unexpected Exception occurred");
+//		}
+	
 
 	public static int getTotalSeconds(String time)throws NumberFormatException, StringIndexOutOfBoundsException {
 		
