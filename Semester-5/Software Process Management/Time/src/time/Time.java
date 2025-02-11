@@ -19,43 +19,15 @@ import javax.swing.JOptionPane;
  * for the testing exercise with JUnit
  *  Winter 2021
  */
-public class Time
-{
-	public static void main(String[] args) 
-	{
-		//try
-	//	{
-			
-		String time = JOptionPane.showInputDialog(null,
-			"Enter a time in the format hh:mm:ss:ms", "Enter Time",
-			JOptionPane.QUESTION_MESSAGE);
-		
+public class Time{ 
+	//new commit
+	public static void main(String[] args) {
 		int totalSeconds = getTotalSeconds("10:10:10");
-		System.out.println("Total Seconds = " + totalSeconds);
-		//JOptionPane.showMessageDialog(null, totalSeconds, "Total Seconds",
-		//	JOptionPane.INFORMATION_MESSAGE);
-		
+		System.out.println("Total Seconds ="+totalSeconds);
 		}
-	
 
-//		catch(StringIndexOutOfBoundsException e)
-//		{
-//			JOptionPane.showMessageDialog(null,
-//					"You entered the time in the wrong format.\n" +
-//					"Please enter the time in the form hh:mm:ss:ms",
-//					"Invalid Time", JOptionPane.ERROR_MESSAGE);
-//		}
-//		catch(NumberFormatException e)
-//		{
-//			JOptionPane.showMessageDialog(null,
-//					"You entered an invalid time.\nPlease enter numbers only.",
-//					"Invalid Time",	JOptionPane.ERROR_MESSAGE);
-//		}
-//		catch(Exception e)
-//		{
-//			System.out.println("An unexpected Exception occurred");
-//		}
-	
+
+
 
 	public static int getTotalSeconds(String time)throws NumberFormatException, StringIndexOutOfBoundsException {
 		
